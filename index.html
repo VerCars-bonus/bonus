@@ -19,7 +19,8 @@
         /* Шапка */
         header {
             width: 100%;
-            height: 170px;
+            height: auto;
+            max-height: 170px;
             overflow: hidden;
             position: relative;
             box-shadow: 0 4px 10px rgba(255, 255, 0, 0.7); /* Тень под шапкой */
@@ -27,7 +28,7 @@
 
         header img {
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover;
         }
 
@@ -71,7 +72,7 @@
         .details h2 {
             font-size: 1.5rem;
             margin: 0;
-            color: #ffff; /* Желтый текст */
+            color: #ffff; /* Белый текст */
         }
 
         .stars {
@@ -123,6 +124,22 @@
             margin-left: 0.2rem;
             width: 20px;
             height: 20px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            header {
+                max-height: 120px; /* Уменьшение высоты на мобильных */
+            }
+
+            .table-container {
+                width: 90%;
+            }
+
+            .btn {
+                font-size: 1rem;
+                padding: 0.6rem;
+            }
         }
     </style>
 </head>
