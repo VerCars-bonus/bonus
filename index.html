@@ -45,7 +45,7 @@
             object-fit: cover;
         }
 
-       .best-bonus {
+      .best-bonus {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -54,16 +54,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff; /* black text */
-    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* yellow shadow */
+    color: #fff; /* белый текст */
+  
     
-    font-size: 2rem;
+    -webkit-text-stroke: 2px black
+   ; /* черная окантовка для текста */
+    text-stroke: 2px black; /* для других браузеров */
 }
 
 /* Для мобильных устройств */
 @media (max-width: 768px) {
     .best-bonus {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -91,14 +93,14 @@
 /* Для планшетов */
 @media (max-width: 768px) {
     .best-bonus img {
-        width: 6vw; /* Увеличиваем смайлики для планшетов */
+        width: 7vw; /* Увеличиваем смайлики для планшетов */
     }
 }
 
 /* Для мобильных устройств */
 @media (max-width: 480px) {
     .best-bonus img {
-        width: 5vw; /* Увеличиваем смайлики для телефонов */
+        width: 6vw; /* Увеличиваем смайлики для телефонов */
     }
 
 
