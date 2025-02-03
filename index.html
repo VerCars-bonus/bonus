@@ -81,6 +81,27 @@
             width: 34px;
             height: 35px;
             margin: 0 10px;
+            
+       
+    width: 5vw; /* Размер смайлика пропорционален ширине экрана */
+    height: auto;
+    margin: 0 10px;
+}
+
+/* Для планшетов */
+@media (max-width: 768px) {
+    .best-bonus img {
+        width: 6vw; /* Увеличиваем смайлики для планшетов */
+    }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 480px) {
+    .best-bonus img {
+        width: 5vw; /* Увеличиваем смайлики для телефонов */
+    }
+
+
         }
 
         .table-container {
